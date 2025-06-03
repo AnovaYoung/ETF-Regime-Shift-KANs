@@ -11,7 +11,7 @@ This project investigates the use of Kolmogorov-Arnold Networks (KANs) for detec
 Traditional deep learning architectures (like MLPs and LSTMs) have made progress in modeling market regimes, but are often black-box and parameter-heavy.  
 **Kolmogorov-Arnold Networks (KANs)**, inspired by the Kolmogorov-Arnold representation theorem, promise superior parameter efficiency and interpretability by employing learnable activation functions on edges.
 
-Our goal is to:
+The goal is to:
 - **Test the limits** of KANs in financial, noisy, real-world settings.
 - **Detect and anticipate** shifts between market states (e.g., "risk-on" and "risk-off") using cross-asset ETF flow data.
 - **Advance the state of the art** and publish results that push both the ML and quant communities forward.
