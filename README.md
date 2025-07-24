@@ -1,5 +1,3 @@
----
-
 # Regime Detection in ETF Flows with Kolmogorov-Arnold Networks (KANs)
 
 Welcome to the bleeding edge of financial machine learning research.
@@ -74,7 +72,8 @@ Read more in the [original KAN paper (arXiv)](https://arxiv.org/abs/2404.19756).
 * [ ] (Planned) Collect financial news and event features (LLM-based)
 * [x] Organize all data in Google Drive, mirrored locally for VS Code
 * [x] Inspect all files and date ranges for consistency
-* [ ] **Merge all data using Dask into a single, massive time-indexed DataFrame** (next up!)
+* [x] **Merge all data using Dask into a single, massive time-indexed DataFrame**
+  **→ \[2025-07] Done! See “Current Status” below.**
 
 ### **3. KAN Prototyping & Benchmarking**
 
@@ -102,13 +101,16 @@ Read more in the [original KAN paper (arXiv)](https://arxiv.org/abs/2404.19756).
 
 ---
 
-## ⚡️ Recent Progress / Major Milestones
+## ⚡️ Current Status (July 2025)
 
-* ✅ **Fund flows, ETF price, macro, and trend data acquired and organized**
-* ✅ **Massive dataset staged for distributed processing with Dask**
-* ⏳ **Ready to merge all data and engineer regime features**
-* ⏳ **Planned: NLP/LLM features for headlines, events, and market-moving news**
-* ⏳ **First KAN regime-shift benchmarks coming soon**
+* **✅ Data acquisition, cleaning, and multi-source merging complete:**
+  All ETF flows, price series, macro factors, and Google Trends data are merged into a single 5,000+ row x 284 column DataFrame in Parquet format.
+* **✅ Ready for local development:**
+  Dataset moved from GCP to a high-performance local machine (MSI 050US, RTX 5080, 64GB RAM) for rapid EDA, feature engineering, and model building.
+* **⏳ KAN prototyping phase starting next:**
+  PyKAN to be installed and first benchmark models to be developed.
+* **⏳ (Planned):**
+  Add LLM-powered news/event features, build live dashboards, and extend benchmarks.
 
 ---
 
@@ -125,11 +127,3 @@ PRs and issues are welcome! If you want to try KANs on new data or extend the be
 * [Survey Paper on KANs](https://arxiv.org/abs/2411.06078)
 
 ---
-
-Let me know if you want this **shorter**, **longer**, or even more “recruiter-friendly” for Goliath/Citadel/Luxor-style quant shops!
-
----
-
-### 🚦 **Ready to run the Dask merge?**
-
-Let me know if you want the *latest Dask code* (optimized for your folder structure), and we’ll jump right in!
