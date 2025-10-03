@@ -1,0 +1,17 @@
+# Default experiment config
+data:
+  fundflow_root: "data/raw/fundflow"
+  processed_root: "data/processed"
+  features_file: "data/processed/features_stage1_filled.parquet"
+
+train:
+  seed: 42
+  device: "cuda"   # use "cpu" if no GPU
+  batch_size: 256
+  epochs: 25
+  lr: 1e-3
+
+model:
+  type: "KAN"
+  hidden_dim: 64
+  depth: 3

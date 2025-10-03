@@ -1,0 +1,38 @@
+[project]
+name = "etf-kan"
+version = "0.1.0"
+description = "ETF Regime Shift modeling with Kolmogorov–Arnold Networks (KANs)"
+readme = "README.md"
+requires-python = ">=3.10"
+# Intentionally omit torch here; install the correct build separately
+
+dependencies = [
+    "pandas>=2.2",
+    "numpy>=1.26",
+    "matplotlib>=3.8",
+    "plotly>=5.20",
+    "scikit-learn>=1.4",
+    "tqdm>=4.66",
+    "pyyaml>=6.0",
+    "jupyterlab>=4.0",
+    "ipykernel>=6.29",
+    "networkx>=3.2",
+    "kan>=0.0.7",
+]
+
+[tool.black]
+line-length = 100
+target-version = ["py311"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+select = ["E", "F", "I", "UP", "B", "SIM"]
+ignore = ["E501"]  # handled by black
+
+[tool.ruff.format]
+preview = true
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+addopts = "-q"

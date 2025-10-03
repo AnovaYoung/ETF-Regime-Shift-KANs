@@ -1,0 +1,14 @@
+# Core scientific stack
+pandas>=2.2
+numpy>=1.26
+matplotlib>=3.8
+plotly>=5.20
+scikit-learn>=1.4
+tqdm>=4.66
+pyyaml>=6.0
+jupyterlab>=4.0
+ipykernel>=6.29
+networkx>=3.2
+
+# KANs
+kan>=0.0.7
