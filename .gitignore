@@ -37,3 +37,9 @@ data/**
 logs/
 outputs/
 runs/
+# data hygiene
+data/raw/**
+data/interim/**
+# allow specific processed artifacts that are small/safe to track
+!data/processed/features_stage1_filled.parquet
+!data/processed/master_merged_single.parquet
